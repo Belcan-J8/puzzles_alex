@@ -1,4 +1,5 @@
 #include "FuelGauge.h"
+#include "C:\Projects\J8\puzzles_alex\termcolor-master\include\termcolor\termcolor.hpp"
 
 FuelGauge::FuelGauge()
 	: fuelLevel(5)
@@ -10,7 +11,9 @@ void FuelGauge::DecrementFuelLevel()
 	--fuelLevel;
 	if (fuelLevel < 2)
 	{
+		std::cout << termcolor::red << "";
 		logger->Log("Low fuel!"); //print in red
-		logger->Log("this is a message");
+		std::cout << termcolor::red << "" << termcolor::reset << std::endl;
+	
 	}
 }

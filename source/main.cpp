@@ -15,5 +15,5 @@ int main(int argc, char* argv[])
 
 	logger.Log("Exiting application");
 
-	std::cout << termcolor::red << "this is a color message" << termcolor::reset << std::endl;
+	
 }
