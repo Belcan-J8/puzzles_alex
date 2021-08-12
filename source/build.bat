@@ -1,2 +1,2 @@
 @ECHO OFF
-g++ main.cpp -o main.exe
+g++ -o main.exe -I ./source *.cpp
