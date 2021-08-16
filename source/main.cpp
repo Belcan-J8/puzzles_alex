@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
 	Car car2;
 	car2.TurnLeft();
 	car2.TurnRight();
-	car.Accelerate();
+	car2.Accelerate();
 
 	logger.Log("Exiting application");
 

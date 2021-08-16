@@ -15,3 +15,16 @@ private:
 	ILogger* logger;
 	ColorPrinter* colorprinter;
 };
+
+class Car2
+{
+public:
+	Car2();
+	void TurnLeft();
+	void TurnRight();
+	void Accelerate();
+private:
+	FuelGauge fuelGauge;
+	ILogger* logger;
+	ColorPrinter* colorprinter;
+};
