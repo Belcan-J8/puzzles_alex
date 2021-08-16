@@ -10,4 +10,5 @@ public:
 private:
 	int fuelLevel;
 	ILogger* logger;
+	ColorPrinter* colorprinter;
 };

@@ -3,7 +3,7 @@
 
 FuelGauge::FuelGauge()
 	: fuelLevel(5)
-	, logger(new RedLogger())
+	, colorprinter(new YellowLogger())
 {
 }
 void FuelGauge::DecrementFuelLevel()
@@ -11,7 +11,7 @@ void FuelGauge::DecrementFuelLevel()
 	--fuelLevel;
 	if (fuelLevel < 2)
 	{
-		logger->Log("Low fuel!");
+		colorprinter->Log("Low fuel!");
 		std::cout << termcolor::reset;
 	}
 }
