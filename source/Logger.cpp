@@ -1,6 +1,5 @@
 #include "Logger.h"
 
-#include "termcolor.hpp"
 #include <iostream>
 
 void Logger::Log(std::string string)

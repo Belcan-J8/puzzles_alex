@@ -1,5 +1,5 @@
 #include "Car.h"
-#include "C:\Projects\J8\puzzles_alex\termcolor-master\include\termcolor\termcolor.hpp"
+
 
 Car::Car()
 	: logger(new BlueLogger())

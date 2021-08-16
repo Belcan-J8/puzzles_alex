@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include "termcolor.hpp"
 
 struct ILogger
 {

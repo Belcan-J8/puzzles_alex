@@ -1,6 +1,6 @@
 #include "Car.h"
 #include "Logger.h"
-#include "C:\Projects\J8\puzzles_alex\termcolor-master\include\termcolor\termcolor.hpp" //add relative path later
+
 
 int main(int argc, char* argv[])
 {
