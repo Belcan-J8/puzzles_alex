@@ -3,11 +3,13 @@
 
 Car::Car()
 	: logger(new BlueLogger())
+	, colorprinter(new CyanLogger())
+
 {
 }
 void Car::TurnLeft()
 {
-	logger->Log("Turning left"); //print in blue
+	colorprinter->Log("Turning left"); //print in blue
 	fuelGauge.DecrementFuelLevel();
 }
 void Car::TurnRight()
