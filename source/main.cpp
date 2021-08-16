@@ -13,6 +13,11 @@ int main(int argc, char* argv[])
 	car.TurnRight();
 	car.Accelerate();
 
+	Car car2;
+	car2.TurnLeft();
+	car2.TurnRight();
+	car.Accelerate();
+
 	logger.Log("Exiting application");
 
 	
