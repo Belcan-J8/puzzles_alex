@@ -38,13 +38,18 @@ public:
 	void Log(std::string string);
 };
 
-class MagentaLogger : public ColorPrinter
+class YellowLogger : public ColorPrinter
 {
 public:
 	void Log(std::string string);
 };
 
-class YellowLogger : public ColorPrinter
+struct MagentaPrinter
+{
+	virtual void Log(std::string string) = 0;
+};
+
+class MagentaLogger : public MagentaPrinter
 {
 public:
 	void Log(std::string string);

@@ -4,6 +4,7 @@
 Car::Car()
 	: logger(new BlueLogger())
 	, colorprinter(new CyanLogger())
+	, magentaprinter(new MagentaLogger())
 
 {
 }
@@ -14,12 +15,12 @@ void Car::TurnLeft()
 }
 void Car::TurnRight()
 {
-	logger->Log("Turning right"); //print in cyan or magenta
+	colorprinter->Log("Turning right"); //print in cyan or magenta
 	fuelGauge.DecrementFuelLevel();
 }
 void Car::Accelerate()
 {
-	logger->Log("Moving ahead"); //print in cyan or magenta
+	magentaprinter->Log("Moving ahead"); //print in cyan or magenta
 	fuelGauge.DecrementFuelLevel();
 	fuelGauge.DecrementFuelLevel();
 }

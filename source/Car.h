@@ -19,5 +19,6 @@ private:
 	FuelGauge fuelGauge;
 	ILogger* logger;
 	ColorPrinter* colorprinter;
+	MagentaPrinter* magentaprinter;
 };
 
