@@ -8,16 +8,19 @@ int main(int argc, char* argv[])
 
 	logger.Log("Starting application");
 
-	int numcars = 2; //number of cars
-	int numcarstemp = numcars - 1; 
 
-	for(int i = 0; i <= numcarstemp; i++){
-		Car car;
-		car.TurnLeft();
-		car.TurnRight();
-		car.Accelerate();
-		car.currentcar = i; //keeping track of which car we are on 
-	}
+	FuelGauge fuelGauge;
+	
+	Car car;
+	car.TurnLeft();
+	car.TurnRight();
+	car.Accelerate();
+
+	car.FollowerTurnLeft();
+	car.FollowerTurnRight();
+	car.FollowerAccelerate();
+	
+	
 
 	logger.Log("Exiting application");
 

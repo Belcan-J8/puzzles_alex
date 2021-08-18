@@ -3,6 +3,7 @@
 #include "FuelGauge.h"
 #include "Logger.h"
 
+
 //int numcars = 2; //number of cars
 //int numcarstemp = numcars - 1; 
 //int currentcar;
@@ -14,7 +15,9 @@ public:
 	void TurnLeft();
 	void TurnRight();
 	void Accelerate();
-	int currentcar;
+	void FollowerTurnLeft();
+	void FollowerTurnRight();
+	void FollowerAccelerate();
 private:
 	FuelGauge fuelGauge;
 	ILogger* logger;
