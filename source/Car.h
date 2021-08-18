@@ -4,9 +4,6 @@
 #include "Logger.h"
 
 
-//int numcars = 2; //number of cars
-//int numcarstemp = numcars - 1; 
-//int currentcar;
 
 class Car
 {
