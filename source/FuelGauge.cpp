@@ -1,5 +1,6 @@
 #include "FuelGauge.h"
 
+
 FuelGauge::FuelGauge()
 	: fuelLevel(5)
 	, logger(new RedLogger())
@@ -11,5 +12,6 @@ void FuelGauge::DecrementFuelLevel()
 	if (fuelLevel < 2)
 	{
 		logger->Log("Low fuel!");
+		std::cout << termcolor::reset;
 	}
 }
