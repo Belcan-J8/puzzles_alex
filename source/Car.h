@@ -3,6 +3,8 @@
 #include "FuelGauge.h"
 #include "Logger.h"
 
+
+
 class Car
 {
 public:
@@ -10,7 +12,13 @@ public:
 	void TurnLeft();
 	void TurnRight();
 	void Accelerate();
+	void FollowerTurnLeft();
+	void FollowerTurnRight();
+	void FollowerAccelerate();
 private:
 	FuelGauge fuelGauge;
 	ILogger* logger;
+	ColorPrinter* colorprinter;
+	MagentaPrinter* magentaprinter;
 };
+

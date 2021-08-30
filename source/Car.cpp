@@ -3,24 +3,41 @@
 
 Car::Car()
 	: logger(new BlueLogger())
+	, colorprinter(new CyanLogger())
+	, magentaprinter(new MagentaLogger())
+
 {
 }
 void Car::TurnLeft()
 {
-	logger->Log("Turning left"); //print in blue
-	std::cout << termcolor::reset; //cancel blue printing
+	colorprinter->Log("Turning left"); //print in cyan
 	fuelGauge.DecrementFuelLevel();
 }
 void Car::TurnRight()
 {
-	logger->Log("Turning right"); //print in blue
-	std::cout << termcolor::reset; //cancel blue printing
+	colorprinter->Log("Turning right"); //print in cyan
 	fuelGauge.DecrementFuelLevel();
 }
 void Car::Accelerate()
 {
-	logger->Log("Moving ahead"); //print in blue
-	std::cout << termcolor::reset; //cancel blue printing
+	colorprinter->Log("Moving ahead"); //print in cyan
+	fuelGauge.DecrementFuelLevel();
+	fuelGauge.DecrementFuelLevel();
+}
+
+void Car::FollowerTurnLeft()
+{
+	magentaprinter->Log("Turning left"); //print in magenta
+	fuelGauge.DecrementFuelLevel();
+}
+void Car::FollowerTurnRight()
+{
+	magentaprinter->Log("Turning right"); //print in magenta
+	fuelGauge.DecrementFuelLevel();
+}
+void Car::FollowerAccelerate()
+{
+	magentaprinter->Log("Moving ahead"); //print in magenta
 	fuelGauge.DecrementFuelLevel();
 	fuelGauge.DecrementFuelLevel();
 }

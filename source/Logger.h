@@ -26,3 +26,31 @@ public:
 	void Log(std::string string);
 };
 
+
+struct ColorPrinter //made new struct so as to leave ILogger interface untouched
+{
+	virtual void Log(std::string string) = 0;
+};
+
+class CyanLogger : public ColorPrinter
+{
+public:
+	void Log(std::string string);
+};
+
+class YellowLogger : public ColorPrinter
+{
+public:
+	void Log(std::string string);
+};
+
+struct MagentaPrinter
+{
+	virtual void Log(std::string string) = 0;
+};
+
+class MagentaLogger : public MagentaPrinter
+{
+public:
+	void Log(std::string string);
+};
